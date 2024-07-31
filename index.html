@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Divisas </title>
+    <link rel = "stylesheet" href = "./css/style.css">
+</head>
+<body>
+    
+
+    <div class = "wrapper">
+        <div class = "blue-bg"></div>
+        <div class = "white-bg"></div>
+
+        <div class = "converter-wrapper">
+            <h2>Convertir</h2>
+            <!-- inputs -->
+            <div class = "converter-inputs">
+                <div class = "from-amount">
+                    <label for = "">Monto</label>
+                    <input type = "number" class = "form-control" placeholder="$" min = "0" value = "1">
+                </div>
+                <div class = "from-currency">
+                    <label for = "">De</label>
+                    <select>
+                        <!-- opciones -->
+                         <option>ARS</option>
+                         <option>USD</option>
+                         <option>EUR</option>
+                         <option>GBP</option>
+                    </select> 
+                </div>
+                <div class = "icon">
+                    <button type = "button" id = "swap-btn">
+                        <img src = "./assets/exchange.png">
+                    </button>
+                </div>
+                <div class = "to-currency">
+                    <label for = "">A</label>
+                    <select>
+                        <!--opciones -->
+                        <option>USD</option>
+                         <option>EUR</option>
+                         <option>GBP</option>
+                         <option>ARS</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- resultado de la conversion-->
+            <div class = "result-wrapper">
+                <p>
+                    <span id = "from-result">ARS 1</span>
+                    =
+                    <span id = "to-result">USD 1</span>
+                </p>
+            </div>
+            <button type = "button" id = "convert-btn">Calcular</button>
+        </div>
+    </div>
+
+ 
+
+
+    <!-- js linkeado -->
+    <script src = "./js/main.js"></script>
+</body>
+</html>
